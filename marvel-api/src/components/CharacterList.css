@@ -1,0 +1,23 @@
+.characterList {
+    justify-content: center;
+  }
+  
+ul {
+    list-style: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    border-radius: 3px;
+    box-shadow: 8px 0 12px 0 rgba(0,0,0,0.1);
+}

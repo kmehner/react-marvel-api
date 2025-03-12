@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import CharacterList from './components/CharacterList';
+import CharacterDetails from './components/CharacterDetails';
 import './App.css';
 
 const App = () => {
 
   const [characters, setCharacters] = useState([]);
+  const [selectedCharacter, setSelectedCharacter] = useState([null]);
 
   useEffect(() => {
     fetchCharacters()
@@ -27,10 +30,12 @@ const App = () => {
     <>
       <div className='app-container'>
         <h1>Marvel Characters</h1>
+        <CharacterList characters = {characters}/>
+        {/* <CharacterDetails /> */}
       </div>
      
     </>
     )
   }
 
-export default App
+export default App;
