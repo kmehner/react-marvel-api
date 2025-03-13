@@ -1,12 +1,9 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
 
-const CharacterDetails = ({ selectedCharacter, characters}) => {
-    const [details, setDetails] = useState(false);
-    const [selectedCharacter, setSelectedCharacter] = useState([null]);
-
-
-
-
+const CharacterDetails = () => {
+  return (
+    <div>CharacterDetails</div>
+  )
 }
-export default CharacterDetails;
+
+export default CharacterDetails
